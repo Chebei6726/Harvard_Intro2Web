@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
     <head>
-        <title>Search</title>
+        <title>Google Search</title>
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap" rel="stylesheet">        
+    <style>
+
+        #button{         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            margin: 50px;
+            padding: 0;
+        }
+        .link{
+            top:0;
+            right:0;
+            margin: 20px;
+            position:absolute;
+            text-align:right;
+        }
+        a{
+            border:10px;
+            padding:20px;
+        
+        }
+    </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+
+        <nav class="link">
+            <a href="./advanced_search.html">Advanced Search</a>
+            <a href="./image_search.html">Google Images</a>
+        </nav>
+
+        <div id="button">
+            <form action="https://google.com/search?q">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+      
+        
     </body>
 </html>
